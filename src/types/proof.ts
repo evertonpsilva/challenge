@@ -17,13 +17,13 @@ export interface Category{
 
 export interface QuestionProof{
 
-    category?: Category,
-    correct?: boolean,
-    correct_answer?: string,
-    difficulty?: string,
-    incorrect_answers?: string[],
-    question?: string,
+    category: Category,
+    correct_answer: string,
+    difficulty: string,
+    incorrect_answers: string[],
+    question: string,
     type?: string
+    correct?: boolean,
 
 }
 

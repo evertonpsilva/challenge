@@ -1,21 +1,26 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Projeto criado com intuito de ser um gerenciador de questões acadêmicas, sobre diversos temas.
+## O que foi utilizado:
 
-## Available Scripts
+- NodeJS: v12.19.0
+- ReactJS: v16.14.0
+- @material-ui/core: v4.11.0
+- @material-ui/icons: v4.9.1
+- react-dom: v16.9.0,
+- react-redux: v7.2.1,
+- react-router-dom: v5.2.0
+- axios: v0.20.0,
+- history: v4.10.1,
+- redux: v4.0.5,
 
-In the project directory, you can run:
+## Como utilizar
 
-### `yarn start`
+Para iniciar o projeto, você precisa ter instado o NodeJS. Você pode baixar nesse [link](https://nodejs.org/en/download/)<br />
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Após isso, basta abrir um promp de comando e usar o comando "npm start" ou "yarn start". (O yarn é uma dependência externa que precisa ser instalada.)
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+### O projeto
 
-### `yarn test`
-
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+O projeto utiliza uma api pública para buscar as categorias e questões
 
 ### `yarn build`
 

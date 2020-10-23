@@ -1,76 +1,64 @@
 import React, { useEffect } from 'react';
 import { connect } from 'react-redux';
-import axios from 'axios';
 import { withRouter } from 'react-router-dom';
 import history from '../../routes/history';
-import { Box, Container, Grid, makeStyles, Paper, Typography } from '@material-ui/core';
+import { Box, Container, Grid, Paper, Typography } from '@material-ui/core';
 import ChevronRightIcon from '@material-ui/icons/ChevronRight';
-import { Category, DefaultProps, DefaultRootState } from '../../types/proof';
-
-const useStyles = makeStyles((theme) => ({
-
-    root: {
-        flexGrow: 1,
-    },
-    header: {
-        background: theme.palette.primary.main,
-        color: 'white',
-        padding: '5px 0'
-    },
-    main: {
-        marginTop: '65px'
-    },
-    paper: {
-        padding: theme.spacing(2),
-        textAlign: 'center',
-        display: 'flex',
-        backgroundColor: theme.palette.primary.main
-    },
-    categoryTitle: {
-        flex: 1,
-        color: 'white',
-        fontWeight: 700
-    },
-    icon: {
-        borderRadius: '50%',
-        backgroundColor: theme.palette.secondary.main,
-        color: 'white'
-    }
-
-}));
-
-function selectCategory(category: Category){
-
-    return {
-        type: 'SELECT_CATEGORY',
-        category,
-    };
-
-}
+import { Category, DefaultProps, DefaultRootState, Proof } from '../../types/proof';
+import HomeStyle from './style';
+import { useBeforeFirstRender } from '../../hooks/useBeforeFirstRender';
+import CategoriesService from '../../service/categories.service';
+import { Loading } from '../../components';
+import Actions from '../../store/actions';
 
 const Home: React.FC<DefaultProps> = ({ proofs, dispatch }: DefaultProps) => {
-    const classes = useStyles();
 
+    const classes = HomeStyle();
+    
+    const [categories, setCategories] = React.useState<Category[]>([]);
+    const [loading, setLoading] = React.useState(true);
+    
     const selectCategoryAndGo = (category: Category) => {
 
-        dispatch(selectCategory(category));
-        history.push({
-            pathname: '/question',
-            state: {
-                category: category,
-            }
-        })
+        if(isFinished(category)){
+            history.push({
+                pathname: '/resume',
+                state: {
+                    category: category,
+                }
+            })
+        }else{
+            dispatch(Actions.selectCategory(category));
+            history.push({
+                pathname: '/question',
+                state: {
+                    category: category,
+                }
+            })
+        }
 
     }
 
-    const [categories, setCategories] = React.useState([]);
+    function isFinished(category: Category): boolean{
+
+        const finishedProof = proofs.find((proof: Proof) => proof.category.id === category.id);
+        return finishedProof != null ? finishedProof.finished : false;
+
+    }
 
     useEffect(() => {
-        axios.get<any>('https://opentdb.com/api_category.php')
-        .then((response) => {
-            setCategories(response.data.trivia_categories);
-        });
-    }, []);
+        getApiData();
+    }, [])
+
+    async function getApiData(){
+        const categoriesData = await CategoriesService.getCategories();
+        setCategories(categoriesData);
+        setLoading(false);
+    }
+
+    if(loading){
+        return (<Loading></Loading>);
+    }
     
     return (
         <div>
@@ -87,7 +75,7 @@ const Home: React.FC<DefaultProps> = ({ proofs, dispatch }: DefaultProps) => {
                         return(
                             <Grid item xs={12} sm={6} md={4} key={index}>
                                 <a onClick={() => selectCategoryAndGo(category) }>
-                                    <Paper className={classes.paper}>
+                                    <Paper className={[classes.paper, isFinished(category) ? classes.finished : '' ].join(' ')}>
                                         <Typography className={classes.categoryTitle}>{category.name}</Typography>
                                         <ChevronRightIcon className={classes.icon} color="primary"></ChevronRightIcon>
                                     </Paper>
