@@ -1,4 +1,5 @@
-import { AnswerData, Category } from "../../types/proof";
+import { AnswerData } from "../../types/answer-data";
+import { Category } from "../../types/category";
 
 const Actions = {
 
