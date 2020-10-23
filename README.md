@@ -22,44 +22,22 @@ Após isso, basta abrir um promp de comando e usar o comando "npm start" ou "yar
 
 O projeto utiliza uma api pública para buscar as categorias e questões, e realiza o gerenciamento das mesmas com redux, utilizando typescript.
 
+Ao entrar na página inicial, serão listadas todas as categorias disponíveis. Ao selecionar uma, serão sorteadas 10 questões que iniciam no nível médio, porém podem alternar para fácil ou também difícil de acordo com seu desempenho. Caso você erre em sequência duas questões de mesmo nível, a próxima questão virá em um nível inferior (a regra não é aplicada caso já esteja no nível fácil). E em caso de acerto de duas questões em sequência do mesmo nível, a próxima questão será no nível superior (a regra não se aplica caso já esteja no nível difícil).
+
+Finalizando a categoria selecionada, você será redirecionado para a página de resumo, onde mostrará os detalhes do seu desempenho, e terá a opção de voltar para a página inicial e escolher outra categoria. Caso selecione uma categoria que já foi finalizada, será redirecionado para a página de resumo.
+
 ## Imagens do projeto
 
 ### - Desktop
-![](evertonpsilva.github.com/challenge/public/categories_desktop.PNG)
-![](evertonpsilva.github.com/challenge/public/question_desktop.PNG)
-![](evertonpsilva.github.com/challenge/public/correct_answer_desktop.PNG)
-![](evertonpsilva.github.com/challenge/public/wrong_answer_desktop.PNG)
-![](evertonpsilva.github.com/challenge/public/category_results_desktop.PNG)
+[Lista de categorias](evertonpsilva.github.com/challenge/public/categories_desktop.PNG)
+[Questão](evertonpsilva.github.com/challenge/public/question_desktop.PNG)
+[Resposta correta](evertonpsilva.github.com/challenge/public/correct_answer_desktop.PNG)
+[Resposta errada](evertonpsilva.github.com/challenge/public/wrong_answer_desktop.PNG)
+[Resumo de acertos](evertonpsilva.github.com/challenge/public/category_results_desktop.PNG)
 
 ### - Mobile
-![](evertonpsilva.github.com/challenge/public/categories_mobile.PNG)
-![](evertonpsilva.github.com/challenge/public/question_mobile.PNG)
-![](evertonpsilva.github.com/challenge/public/correct_answer_mobile.PNG)
-![](evertonpsilva.github.com/challenge/public/wrong_answer_mobile.PNG)
-![](evertonpsilva.github.com/challenge/public/category_results_mobile.PNG)
-
-### `yarn build`
-
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+[Listagem de categorias](evertonpsilva.github.com/challenge/public/categories_mobile.PNG)
+[Questão](evertonpsilva.github.com/challenge/public/question_mobile.PNG)
+[Resposta correta](evertonpsilva.github.com/challenge/public/correct_answer_mobile.PNG)
+[Resposta errada](evertonpsilva.github.com/challenge/public/wrong_answer_mobile.PNG)
+[Resumo de acertos](evertonpsilva.github.com/challenge/public/category_results_mobile.PNG)
