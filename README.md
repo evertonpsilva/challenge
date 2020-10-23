@@ -20,7 +20,23 @@ Após isso, basta abrir um promp de comando e usar o comando "npm start" ou "yar
 
 ### O projeto
 
-O projeto utiliza uma api pública para buscar as categorias e questões
+O projeto utiliza uma api pública para buscar as categorias e questões, e realiza o gerenciamento das mesmas com redux, utilizando typescript.
+
+## Imagens do projeto
+
+### - Desktop
+[Lista de categorias](evertonpsilva.github.com/challenge/public/categories_desktop.PNG)
+[Questão](evertonpsilva.github.com/challenge/public/question_desktop.PNG)
+[Resposta correta](evertonpsilva.github.com/challenge/public/correct_answer_desktop.PNG)
+[Resposta errada](evertonpsilva.github.com/challenge/public/wrong_answer_desktop.PNG)
+[Resumo de acertos](evertonpsilva.github.com/challenge/public/category_results_desktop.PNG)
+
+### - Mobile
+[Listagem de categorias](evertonpsilva.github.com/challenge/public/categories_mobile.PNG)
+[Questão](evertonpsilva.github.com/challenge/public/question_mobile.PNG)
+[Resposta correta](evertonpsilva.github.com/challenge/public/correct_answer_mobile.PNG)
+[Resposta errada](evertonpsilva.github.com/challenge/public/wrong_answer_mobile.PNG)
+[Resumo de acertos](evertonpsilva.github.com/challenge/public/category_results_mobile.PNG)
 
 ### `yarn build`
 
