@@ -29,15 +29,15 @@ Finalizando a categoria selecionada, você será redirecionado para a página de
 ## Imagens do projeto
 
 ### - Desktop
-[Lista de categorias](evertonpsilva.github.com/challenge/public/categories_desktop.PNG)
-[Questão](evertonpsilva.github.com/challenge/public/question_desktop.PNG)
-[Resposta correta](evertonpsilva.github.com/challenge/public/correct_answer_desktop.PNG)
-[Resposta errada](evertonpsilva.github.com/challenge/public/wrong_answer_desktop.PNG)
-[Resumo de acertos](evertonpsilva.github.com/challenge/public/category_results_desktop.PNG)
+[Lista de categorias](https://github.com/evertonpsilva/challenge/tree/master/public/categories_desktop.PNG)
+[Questão](https://github.com/evertonpsilva/challenge/tree/master/public/question_desktop.PNG)
+[Resposta correta](https://github.com/evertonpsilva/challenge/tree/master/public/correct_answer_desktop.PNG)
+[Resposta errada](https://github.com/evertonpsilva/challenge/tree/master/public/wrong_answer_desktop.PNG)
+[Resumo de acertos](https://github.com/evertonpsilva/challenge/tree/master/public/category_results_desktop.PNG)
 
 ### - Mobile
-[Listagem de categorias](evertonpsilva.github.com/challenge/public/categories_mobile.PNG)
-[Questão](evertonpsilva.github.com/challenge/public/question_mobile.PNG)
-[Resposta correta](evertonpsilva.github.com/challenge/public/correct_answer_mobile.PNG)
-[Resposta errada](evertonpsilva.github.com/challenge/public/wrong_answer_mobile.PNG)
-[Resumo de acertos](evertonpsilva.github.com/challenge/public/category_results_mobile.PNG)
+[Listagem de categorias](https://github.com/evertonpsilva/challenge/tree/master/public/categories_mobile.PNG)
+[Questão](https://github.com/evertonpsilva/challenge/tree/master/public/question_mobile.PNG)
+[Resposta correta](https://github.com/evertonpsilva/challenge/tree/master/public/correct_answer_mobile.PNG)
+[Resposta errada](https://github.com/evertonpsilva/challenge/tree/master/public/wrong_answer_mobile.PNG)
+[Resumo de acertos](https://github.com/evertonpsilva/challenge/tree/master/public/category_results_mobile.PNG)
