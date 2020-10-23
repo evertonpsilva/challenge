@@ -4,12 +4,15 @@ import { withRouter } from 'react-router-dom';
 import history from '../../routes/history';
 import { Box, Container, Grid, Paper, Typography } from '@material-ui/core';
 import ChevronRightIcon from '@material-ui/icons/ChevronRight';
-import { Category, DefaultProps, DefaultRootState, Proof } from '../../types/proof';
 import HomeStyle from './style';
 import { useBeforeFirstRender } from '../../hooks/useBeforeFirstRender';
 import CategoriesService from '../../service/categories.service';
 import { Loading } from '../../components';
 import Actions from '../../store/actions';
+import { Category } from '../../types/category';
+import { DefaultProps } from '../../types/default-props';
+import { Proof } from '../../types/proof';
+import { DefaultRootState } from '../../types/default-root-state';
 
 const Home: React.FC<DefaultProps> = ({ proofs, dispatch }: DefaultProps) => {
 

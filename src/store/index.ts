@@ -1,6 +1,7 @@
-import { act } from 'react-dom/test-utils';
 import { createStore } from 'redux';
-import { ACTIONS, DIFFICULTIES, Proof } from '../types/proof';
+import { ACTIONS } from '../types/actions';
+import { DIFFICULTIES } from '../types/difficulties';
+import { Proof } from '../types/proof';
 
 const initProofs:Proof[] = []
 

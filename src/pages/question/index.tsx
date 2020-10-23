@@ -5,11 +5,16 @@ import history from '../../routes/history';
 import { Box, Button, Divider, FormControlLabel, LinearProgress, RadioGroup, Typography } from '@material-ui/core';
 import { DialogAnswer, Loading, RadioButton } from '../../components';
 import { useBeforeFirstRender } from '../../hooks/useBeforeFirstRender';
-import { QuestionProof, DefaultProps, Proof, Category, DIFFICULTIES, DefaultRootState } from '../../types/proof';
 import QuestionService from '../../service/question.service';
 import Utils from '../../utils';
 import QuestionStyle from './style';
 import Actions from '../../store/actions';
+import { DefaultProps } from '../../types/default-props';
+import { Category } from '../../types/category';
+import { QuestionProof } from '../../types/question-proof';
+import { Proof } from '../../types/proof';
+import { DIFFICULTIES } from '../../types/difficulties';
+import { DefaultRootState } from '../../types/default-root-state';
 
 
 const Question: React.FC<DefaultProps> = ({proofs, dispatch}: DefaultProps) => {
@@ -151,6 +156,7 @@ const Question: React.FC<DefaultProps> = ({proofs, dispatch}: DefaultProps) => {
             category: {id: selectedCategory.id}, 
             question: {
                 ...currentQuestion,
+                dateTimeAnswer: new Date(),
                 correct: isCorrectAnswer(answerOption), 
                 difficulty: proof.currentDifficulty
             },

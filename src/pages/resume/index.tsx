@@ -4,8 +4,10 @@ import { withRouter } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { Box, Button, Container, Grid, Paper, Typography } from '@material-ui/core';
 import { useBeforeFirstRender } from '../../hooks/useBeforeFirstRender';
-import { DefaultProps, DefaultRootState, DIFFICULTIES } from '../../types/proof';
 import ResumeStyle from './style';
+import { DefaultProps } from '../../types/default-props';
+import { DefaultRootState } from '../../types/default-root-state';
+import { DIFFICULTIES } from '../../types/difficulties';
 
 const Resume: React.FC<DefaultProps> = ({proofs}: DefaultProps) => {
     const classes = ResumeStyle();
