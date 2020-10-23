@@ -1,5 +1,5 @@
 import axios from 'axios';
-import { Category } from '../types/proof';
+import { Category } from '../types/category';
 
 const CategoriesService = {
     getCategories: async (): Promise<Category[]> => {

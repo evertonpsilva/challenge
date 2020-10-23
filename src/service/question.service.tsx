@@ -1,5 +1,6 @@
 import axios from 'axios';
-import { Category, QuestionProof } from "../types/proof";
+import { Category } from '../types/category';
+import { QuestionProof } from '../types/question-proof';
 
 const QuestionService = {
 
