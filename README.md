@@ -14,9 +14,15 @@ Projeto criado com intuito de ser um gerenciador de questões acadêmicas, sobre
 
 ## Como utilizar
 
-Para iniciar o projeto, você precisa ter instado o NodeJS. Você pode baixar nesse [link](https://nodejs.org/en/download/)<br />
+Para utilizar o projeto virtualmente, você pode [Clicar aqui](https://ecstatic-newton-52a240.netlify.app/) que será redirecionado para o aplicativo em funcionamento. Foi feito deploy no site [Netlify](https://www.netlify.com/) utilizando o comando "yarn build".
+
+## Como instalar em máquina local
+
+Para instalar o projeto, você precisa ter instado o NodeJS. Você pode baixar nesse [link](https://nodejs.org/en/download/)<br />
 
 Após isso, basta abrir um promp de comando e usar o comando "npm start" ou "yarn start". (O yarn é uma dependência externa que precisa ser instalada.)
+
+Obs.: As versões suportadas estão listadas acima.
 
 ### O projeto
 
