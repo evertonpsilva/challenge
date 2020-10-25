@@ -17,12 +17,16 @@ const HomeStyle = makeStyles((theme) => ({
         padding: theme.spacing(2),
         textAlign: 'center',
         display: 'flex',
-        backgroundColor: theme.palette.primary.main
+        backgroundColor: theme.palette.primary.main,
+        alignItems: 'center',
     },
     categoryTitle: {
         flex: 1,
         color: 'white',
-        fontWeight: 700
+        fontWeight: 700,
+        [theme.breakpoints.down("xs")]: {
+            fontSize: '0.9rem'
+        },
     },
     icon: {
         borderRadius: '50%',
@@ -30,7 +34,7 @@ const HomeStyle = makeStyles((theme) => ({
         color: 'white'
     },
     finished: {
-        backgroundColor: theme.palette.secondary.dark,
+        backgroundColor: theme.palette.primary.dark,
     }
 
 }));

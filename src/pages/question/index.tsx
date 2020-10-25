@@ -4,7 +4,6 @@ import { withRouter } from 'react-router-dom';
 import history from '../../routes/history';
 import { Box, Button, Divider, FormControlLabel, LinearProgress, RadioGroup, Typography } from '@material-ui/core';
 import { DialogAnswer, Loading, RadioButton } from '../../components';
-import { useBeforeFirstRender } from '../../hooks/useBeforeFirstRender';
 import QuestionService from '../../service/question.service';
 import Utils from '../../utils';
 import QuestionStyle from './style';
@@ -94,18 +93,20 @@ const Question: React.FC<DefaultProps> = ({proofs, dispatch}: DefaultProps) => {
                 if(lastQuestion.correct && penultimateQuestion.correct){
                     if(proof.currentDifficulty == DIFFICULTIES.MEDIUM){
                         dispatch(Actions.changeDificulty({category: {id: selectedCategory.id}, currentDifficulty: DIFFICULTIES.HARD}));
+                        getApiData();
                     }else if(proof.currentDifficulty == DIFFICULTIES.EASY){
                         dispatch(Actions.changeDificulty({category: {id: selectedCategory.id}, currentDifficulty: DIFFICULTIES.MEDIUM}));
+                        getApiData();
                     }
                 }else if(!lastQuestion.correct && !penultimateQuestion.correct){
                     if(proof.currentDifficulty == DIFFICULTIES.HARD){
                         dispatch(Actions.changeDificulty({category: {id: selectedCategory.id}, currentDifficulty: DIFFICULTIES.MEDIUM}));
+                        getApiData();
                     }else if(proof.currentDifficulty == DIFFICULTIES.MEDIUM){
                         dispatch(Actions.changeDificulty({category: {id: selectedCategory.id}, currentDifficulty: DIFFICULTIES.EASY}));
+                        getApiData();
                     }
                 }
-                setQuestions([]);
-                getApiData();
                 return;
             }
             

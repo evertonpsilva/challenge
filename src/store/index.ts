@@ -59,7 +59,6 @@ function initialReducer(state = INITIAL_STATE, action){
                 proofQuestion.finished = true;
             }
     
-    
             return {
                 ...state,
             };

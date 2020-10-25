@@ -5,7 +5,6 @@ import history from '../../routes/history';
 import { Box, Container, Grid, Paper, Typography } from '@material-ui/core';
 import ChevronRightIcon from '@material-ui/icons/ChevronRight';
 import HomeStyle from './style';
-import { useBeforeFirstRender } from '../../hooks/useBeforeFirstRender';
 import CategoriesService from '../../service/categories.service';
 import { Loading } from '../../components';
 import Actions from '../../store/actions';

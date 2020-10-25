@@ -41,6 +41,10 @@ const QuestionStyle = makeStyles((theme) => ({
         marginBottom: 15,
         [theme.breakpoints.down("md")]: {
             fontSize: '1.05rem'
+        },
+        [theme.breakpoints.down("xs")]: {
+            fontSize: '1rem',
+            marginBottom: 5,
         }
     },
     radioGroup: {

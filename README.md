@@ -1,4 +1,5 @@
 Projeto criado com intuito de ser um gerenciador de questões acadêmicas, sobre diversos temas.
+
 ## O que foi utilizado:
 
 - NodeJS: v12.19.0
@@ -14,15 +15,15 @@ Projeto criado com intuito de ser um gerenciador de questões acadêmicas, sobre
 
 ## Como utilizar
 
-Para utilizar o projeto virtualmente, você pode [Clicar aqui](https://ecstatic-newton-52a240.netlify.app/) que será redirecionado para o aplicativo em funcionamento. Foi feito deploy no site [Netlify](https://www.netlify.com/) utilizando o comando "yarn build".
+Para utilizar o projeto virtualmente, você pode ![clicar aqui](https://ecstatic-newton-52a240.netlify.app/) que será redirecionado para o aplicativo em funcionamento. Foi feito deploy no site ![Netlify](https://www.netlify.com/) utilizando o comando "yarn build".
 
 ## Como instalar em máquina local
 
-Para instalar o projeto, você precisa ter instado o NodeJS. Você pode baixar nesse [link](https://nodejs.org/en/download/)<br />
+Para instalar o projeto, você precisa ter instado o NodeJS. Você pode baixar nesse ![link](https://nodejs.org/en/download/)<br />
 
 Após isso, basta abrir um promp de comando e usar o comando "npm start" ou "yarn start". (O yarn é uma dependência externa que precisa ser instalada.)
 
-Obs.: As versões suportadas estão listadas acima.
+Obs.: As versões utilizadas estão listadas acima.
 
 ### O projeto
 
@@ -35,15 +36,15 @@ Finalizando a categoria selecionada, você será redirecionado para a página de
 ## Imagens do projeto
 
 ### - Desktop
-[Lista de categorias](https://github.com/evertonpsilva/challenge/tree/master/public/categories_desktop.PNG)
-[Questão](https://github.com/evertonpsilva/challenge/tree/master/public/question_desktop.PNG)
-[Resposta correta](https://github.com/evertonpsilva/challenge/tree/master/public/correct_answer_desktop.PNG)
-[Resposta errada](https://github.com/evertonpsilva/challenge/tree/master/public/wrong_answer_desktop.PNG)
-[Resumo de acertos](https://github.com/evertonpsilva/challenge/tree/master/public/category_results_desktop.PNG)
+![Lista de categorias](https://github.com/evertonpsilva/challenge/tree/master/public/categories_desktop.PNG)
+![Questão](https://github.com/evertonpsilva/challenge/tree/master/public/question_desktop.PNG)
+![Resposta correta](https://github.com/evertonpsilva/challenge/tree/master/public/correct_answer_desktop.PNG)
+![Resposta errada](https://github.com/evertonpsilva/challenge/tree/master/public/wrong_answer_desktop.PNG)
+![Resumo de acertos](https://github.com/evertonpsilva/challenge/tree/master/public/category_results_desktop.PNG)
 
 ### - Mobile
-[Listagem de categorias](https://github.com/evertonpsilva/challenge/tree/master/public/categories_mobile.PNG)
-[Questão](https://github.com/evertonpsilva/challenge/tree/master/public/question_mobile.PNG)
-[Resposta correta](https://github.com/evertonpsilva/challenge/tree/master/public/correct_answer_mobile.PNG)
-[Resposta errada](https://github.com/evertonpsilva/challenge/tree/master/public/wrong_answer_mobile.PNG)
-[Resumo de acertos](https://github.com/evertonpsilva/challenge/tree/master/public/category_results_mobile.PNG)
+![Listagem de categorias](https://github.com/evertonpsilva/challenge/tree/master/public/categories_mobile.PNG)
+![Questão](https://github.com/evertonpsilva/challenge/tree/master/public/question_mobile.PNG)
+![Resposta correta](https://github.com/evertonpsilva/challenge/tree/master/public/correct_answer_mobile.PNG)
+![Resposta errada](https://github.com/evertonpsilva/challenge/tree/master/public/wrong_answer_mobile.PNG)
+![Resumo de acertos](https://github.com/evertonpsilva/challenge/tree/master/public/category_results_mobile.PNG)
