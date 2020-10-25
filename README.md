@@ -15,7 +15,7 @@ Projeto criado com intuito de ser um gerenciador de questões acadêmicas, sobre
 
 ## Como utilizar
 
-Para utilizar o projeto virtualmente, você pode [clicar aqui](https://ecstatic-newton-52a240.netlify.app/) que será redirecionado para o aplicativo em funcionamento. Foi feito deploy no site [Netlify](https://www.netlify.com/) utilizando o comando "yarn build".
+Para utilizar o projeto virtualmente, você pode [clicar aqui](https://inspiring-hodgkin-c98315.netlify.app/) que será redirecionado para o aplicativo em funcionamento. Foi feito deploy no site [Netlify](https://www.netlify.com/) utilizando o comando "yarn build".
 
 ## Como instalar em máquina local
 
