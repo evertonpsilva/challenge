@@ -92,22 +92,25 @@ const Question: React.FC<DefaultProps> = ({proofs, dispatch}: DefaultProps) => {
             if(lastQuestion.difficulty == penultimateQuestion.difficulty){
                 if(lastQuestion.correct && penultimateQuestion.correct){
                     if(proof.currentDifficulty == DIFFICULTIES.MEDIUM){
+                        console.log('a');
                         dispatch(Actions.changeDificulty({category: {id: selectedCategory.id}, currentDifficulty: DIFFICULTIES.HARD}));
                         getApiData();
                     }else if(proof.currentDifficulty == DIFFICULTIES.EASY){
+                        console.log('b');
                         dispatch(Actions.changeDificulty({category: {id: selectedCategory.id}, currentDifficulty: DIFFICULTIES.MEDIUM}));
                         getApiData();
                     }
                 }else if(!lastQuestion.correct && !penultimateQuestion.correct){
                     if(proof.currentDifficulty == DIFFICULTIES.HARD){
+                        console.log('c');
                         dispatch(Actions.changeDificulty({category: {id: selectedCategory.id}, currentDifficulty: DIFFICULTIES.MEDIUM}));
                         getApiData();
                     }else if(proof.currentDifficulty == DIFFICULTIES.MEDIUM){
+                        console.log('d');
                         dispatch(Actions.changeDificulty({category: {id: selectedCategory.id}, currentDifficulty: DIFFICULTIES.EASY}));
                         getApiData();
                     }
                 }
-                return;
             }
             
         }

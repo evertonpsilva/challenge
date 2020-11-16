@@ -26,7 +26,7 @@ const DialogAnswer: React.FC<DialogAnswerProps> = ({sucess, open, onClose}) => {
     const title = sucess ? "Correct answer" : "Wrong answer";
 
     return (
-        <Dialog ref={React.createRef} open={open} aria-labelledby="alert-dialog-title" aria-describedby="alert-dialog-description" >
+        <Dialog ref={() => React.createRef()} open={open} aria-labelledby="alert-dialog-title" aria-describedby="alert-dialog-description" >
             <DialogContent>
                 <Box className={classes.dialogContent}>
                     {icon}
